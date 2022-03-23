@@ -1,4 +1,5 @@
-#React Native application with the pokemon api.
+# React Native application with the pokemon api.
+
 We implemeted the Splash Screen, The Main Page with the name of the pkemons and the search bar.
 
 
