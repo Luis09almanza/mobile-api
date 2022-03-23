@@ -4,13 +4,13 @@ We implemeted the Splash Screen, The Main Page with the name of the pokemons and
 
 Contributors:
 <br>
-Alejandro Garcia
+Alejandro Garcia.
 <br>
-Luis Hernandez
+Luis Hernandez.
 <br>
-Salvador Perez
+Salvador Perez.
 <br>
-Manuel Barraza
+Manuel Barraza.
 <br>
 
 <div>
