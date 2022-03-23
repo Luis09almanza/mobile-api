@@ -1,13 +1,65 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View, FlatList } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Marvel API</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+export default class App extends React.Component {
+
+  constructor(props){
+    super(props);
+
+    this.state = {
+      loading: false,
+      pokemon: [],
+      url:'https://pokeapi.co/api/v2/pokemon/'
+    }
+  }
+
+  componentDidMount(){
+    this.getPokemon();
+  }
+
+  getPokemon = () =>{
+
+    this.setState({loading:true})
+
+    fetch(this.state.url)
+    .then(res => res.json())
+    .then( res=>{
+
+        this.setState({
+          pokemon: res.results,
+          url: res.next,
+          loading:false
+        })
+    });
+  }
+
+  render(){
+    if(this.state.loading){
+
+    return (
+      <View style={styles.container}>
+        <Text>Descargando pokemon</Text>
+        <StatusBar style="auto" />
+      </View>
+    );
+    }
+    return (
+      <View>
+        <Text>Pokemon!</Text>
+        <FlatList
+          data={this.state.pokemon}
+          renderItem={
+            ({item}) => <Text>{item.name}</Text>
+          }
+          keyExtractor={(item, index) => index.toString()}
+        />
+
+        
+      </View>
+    );
+    
+  }
 }
 
 const styles = StyleSheet.create({
