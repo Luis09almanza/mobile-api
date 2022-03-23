@@ -7,7 +7,7 @@ export default function SplashScreen({navigation}){
 
     useEffect(() => {
         setTimeout(() => {
-            navigation.replace("Pokemons")
+            navigation.replace("Pokemon")
         },5000)
     });
     return(
@@ -25,8 +25,8 @@ const styles = StyleSheet.create({
         backgroundColor:"#e2e7da"
     },
     image:{
-        width:400,
-        height:650,
+        width:'100%',
+        height:'100%',
         alignSelf:'center'
     }
 })

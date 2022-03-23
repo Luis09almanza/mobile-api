@@ -46,7 +46,6 @@ export default class Pokemons extends React.Component {
     }
     return (
       <View>
-        <Text>Pokemon!</Text>
         <FlatList
           data={this.state.pokemon}
           renderItem={

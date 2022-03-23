@@ -1,6 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from "react";
-import Pokemons from '../Screens/Pokemons';
+import Pokemons from '../Screens/Pokemon';
 import SplashScreen from '../Screens/SplashScreen';
 
 const Stack = createNativeStackNavigator();
@@ -13,7 +13,7 @@ export default function NavigationStack(){
                 component={SplashScreen} 
                 options={{headerShown:false}}
             />
-            <Stack.Screen name='Pokemons' component={Pokemons}/>
+            <Stack.Screen name='Pokemon' component={Pokemons}/>
         </Stack.Navigator>
     );
 }
