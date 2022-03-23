@@ -1,6 +1,6 @@
 # React Native application with the pokemon api.
 
-We implemeted the Splash Screen, The Main Page with the name of the pokemons and the search bar. The only thing that we cannot added it was the characters details.
+We implemeted the Splash Screen, The Main Page with the name of the pokemons and the search bar. The only thing that we cannot add was the characters details.
 
 
 <div>
