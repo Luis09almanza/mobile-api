@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { Text, View, FlatList } from 'react-native';
+import React, {useState, useEffect, useMemo} from 'react';
+import { Text, View, FlatList,TouchableWithoutFeedback  } from 'react-native';
+import { Searchbar } from 'react-native-paper';
 
 export default class Pokemons extends React.Component {
 
@@ -34,6 +35,7 @@ export default class Pokemons extends React.Component {
     });
   }
 
+
   render(){
     if(this.state.loading){
 
@@ -45,13 +47,23 @@ export default class Pokemons extends React.Component {
     );
     }
     return (
+      
       <View>
+        <Searchbar
+          placeholder='Search Pokemon'
+          data={this.state.pokemon}
+        />
         <FlatList
           data={this.state.pokemon}
           renderItem={
-            ({item}) => <Text>{item.name}</Text>
+            ({item}) => <TouchableWithoutFeedback
+            onPress={()=>{
+              console.log(item.name);
+            }}
+           ><Text>{item.name}</Text></TouchableWithoutFeedback>
           }
           keyExtractor={(item, index) => index.toString()}
+          
         />
 
         
@@ -60,3 +72,5 @@ export default class Pokemons extends React.Component {
     
   }
 }
+
+
