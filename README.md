@@ -20,9 +20,9 @@ Manuel Barraza
 </div>
 <br>
 <br>
- Coevaluation by:
+ Coevaluation by: Jonathan Rico
  <br>
  <br>
 <div>
-<img src='https://user-images.githubusercontent.com/81264536/159720692-6ca3c65f-7c6e-4bfe-8845-0e17ce767d5a.png' width 250>
+<img src='https://user-images.githubusercontent.com/80539239/159723609-caadbd83-6dcc-474b-bffb-6a5d67615bee.png' width 250>
 </div>
