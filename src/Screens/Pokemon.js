@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, {useState, useEffect, useMemo} from 'react';
 import { Text, View, FlatList,TouchableWithoutFeedback  } from 'react-native';
 import { Searchbar } from 'react-native-paper';
+import {CharactersScreen} from './searchPokemon'
 
 export default class Pokemons extends React.Component {
 
