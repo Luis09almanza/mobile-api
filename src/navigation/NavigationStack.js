@@ -13,7 +13,7 @@ export default function NavigationStack(){
                 component={SplashScreen} 
                 options={{headerShown:false}}
             />
-            <Stack.Screen name='Pokemon' component={Pokemons}/>
+            <Stack.Screen name='Pokemon' component={Pokemons} options={{headerShown:false}}/>
         </Stack.Navigator>
     );
 }

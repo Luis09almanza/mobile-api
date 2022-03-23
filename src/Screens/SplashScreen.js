@@ -8,7 +8,7 @@ export default function SplashScreen({navigation}){
     useEffect(() => {
         setTimeout(() => {
             navigation.replace("Pokemon")
-        },5000)
+        },7000)
     });
     return(
         <SafeAreaView style = {styles.image_container}>
