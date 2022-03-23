@@ -1,4 +1,6 @@
-# mobile-api
+React Native application with the pokemon api.
+We implemeted the Splash Screen, The Main Page with the name of the pkemons and the search bar.
+
 
 <div>
 <img src='https://user-images.githubusercontent.com/81264536/159654802-9187b5ad-c6c2-4232-8162-4ae42c45d917.png' width=250>
