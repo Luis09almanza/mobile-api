@@ -2,6 +2,11 @@
 
 We implemeted the Splash Screen, The Main Page with the name of the pokemons and the search bar. The only thing that we cannot add was the characters details.
 
+Contributors:
+Alejandro Garcia
+Luis Hernandez
+Salvador Perez
+Manuel Barraza
 
 <div>
 <img src='https://user-images.githubusercontent.com/81264536/159654802-9187b5ad-c6c2-4232-8162-4ae42c45d917.png' width=250>
